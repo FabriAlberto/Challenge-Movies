@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ 
+a{
+text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+  list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
+.cont__app{
   min-height: 100vh;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+.container__navbar{
+  color: #fff;
+}
+.h2__login{
+  text-align: center;
+  margin-top: 40px;
+  
+}
+.cont__movie{
+  border: none;
+  box-shadow:0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+.overview{
+  color: #6b6b6b;
+}
+
+.container__detail{
+
+  z-index: 1;
+  margin: 0;
+}
+.container__detail__2{
+  
+  margin-top: 50px;
+  height: 80vh;
+
+}
+.img__backg{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter:blur(40px);
+  
+}
+.container__detail__1::after{
+ content: '';
+ background-color: rgba(0, 0, 0, 0.671);
+ width: 100%;
+ height: 100%;
+position: absolute;
+
+  
+}
+.cont__title{
+  justify-content: space-between;
+  height: 100%;
+}
+.cont__title__date{
+  height: 25%;
+}
+.cont__overview{
+  height: auto;
+  width: 100%;
+  font-size: .95rem;
+  border-radius: 10px;
+  background: rgba(141, 141, 141, 0.397);
+  backdrop-filter: blur(50px);
+  text-align: start;
+  padding: 30px;
+ /*  overflow-y: scroll; */
+}
+.cont__overview__all{
+  height: 75%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.cont__img__detail{
+  height: 80vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.img__detail{
+  width: 80%;
+  height: 100%;
+}
+.genres{
+ font-size: .9rem ;
+  margin: 2px;
+  padding: 2px;
+  width: auto;
+  height: 25%;
+  border-radius: 5px;
+  border: 1px solid #a5a5a5b0;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.list__genres{
+  height: 20%;
 }
+.button__detail{
+  width: 80% ;
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(141, 141, 141, 0.397);
+  backdrop-filter: blur(50px);
+  margin-top: 20px;
+}
+.cont__button__detail{
+ height: 75%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.favorite__btn{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 18px;
+  top: 35px;
+  border: none;
+  filter: opacity(70% );
+}
+.favorite__btn:hover{
+  filter: opacity(100% );
 }
